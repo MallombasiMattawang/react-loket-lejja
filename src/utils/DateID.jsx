@@ -1,4 +1,4 @@
-export default function dateID(date) {
+export default function DateID(date) {
     let e = date.getDate();
     return `${e} ${
       [

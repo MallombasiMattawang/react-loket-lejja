@@ -80,9 +80,9 @@ export default function login() {
       >
         <div className="col-md-7">
           <div className="text-center mb-5">
-            <img src={"/images/logo-jbg.png"} width={"100"} />
+            <img src={"/images/logo-1.png"} width={"200"} />
             <h4>
-              <strong className="text-white mt-3">DESA SANTRI, JOMBANG</strong>
+              <strong className="text-white mt-5">OPERATOR E-TIKETING</strong>
             </h4>
           </div>
           <div className="card rounded-4 shadow-sm border-top-success">

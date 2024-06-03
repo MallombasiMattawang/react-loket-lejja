@@ -1,9 +1,9 @@
 .jumbotron-header {
-    background-color: #2e7d32;
+    background-color: #555555;
 }
 
 .header-logo {
-    margin-top: 18px;
+    margin-top: 30px;
     padding-right: 5px;
     float: left;
 }
@@ -18,12 +18,12 @@
 }
 
 .navbar-top {
-    background-color: #005005;
+    background-color: #292a2c;
     color: white;
 }
 
 .navbar-blue {
-    background-color: #005005;
+    background-color: #292a2c;
     border-bottom: 5px solid #f3ca35;
 }
 
@@ -35,7 +35,7 @@
 .nav-web .nav-link:hover {
     background: #f3ca35;
     border-radius: .3rem;
-    color: #005006 !important;
+    color: #000 !important;
 }
 
 .navbar-nav .nav-link {
@@ -47,22 +47,22 @@
 .nav-web .active {
     background: #f3ca35;
     border-radius: .3rem;
-    color: #005006 !important;
+    color: #000 !important;
 }
 
 .btn-primary {
-    background-color: #2e7d32;
-    border-color: #2e7d32;
+    background-color: #555555;
+    border-color: #555555;
 }
 
 .btn-primary:hover {
-    background-color: #2e7d32;
-    border-color: #2e7d32;
+    background-color: #555555;
+    border-color: #555555;
 }
 
 .btn-primary-dark {
-    background-color: #005005;
-    border-color: #005005;
+    background-color: #292a2c;
+    border-color: #292a2c;
     color: white;
 }
 
@@ -89,13 +89,13 @@
 }
 
 .footer-top {
-    background-color: #2e7d32;
+    background-color: #555555;
     color: white;
     border-top: 5px solid #f3ca35;
 }
 
 .footer-bottom {
-    background-color: #005005;
+    background-color: #292a2c;
 }
 
 .navbar-light .navbar-toggler {
@@ -112,7 +112,7 @@
 } */
 
 .text-green {
-    color: #2e7d32!important;
+    color: #555555!important;
 }
 
 .carousel-custom{z-index:9;background:#fff;border:none;border-radius:50%;padding:10px;width:22px}

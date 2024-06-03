@@ -19,10 +19,10 @@ export default function Navbar() {
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
               <li className="nav-item me-4">
-                <i className="fa fa-envelope"></i> info@desa-santri.com
+                <i className="fa fa-envelope"></i> ksdasulsel@gmail.com
               </li>
               <li className="nav-item me-4">
-                <i className="fa fa-phone"></i> +62 857-8585-2224
+                <i className="fa fa-phone"></i> 0811-4600-883
               </li>
             </ul>
             <div>
@@ -48,17 +48,17 @@ export default function Navbar() {
               <div className="header-logo">
                 <a href="#">
                   <img
-                    src="/images/logo-jbg.png"
+                    src="/images/logo-1.png"
                     width="110"
                     className="img-responsive"
                   />
                 </a>
               </div>
               <div className="header-text">
-                <h2 className="header-school">DESA SANTRI</h2>
+                <h2 className="header-school">E-TIKETING TN & TWA</h2>
                 <hr />
                 <div className="header-address">
-                  Jln. Diponegoro No. 58, Wonosalam, Jombang, Jawa Timur, 61473
+                  Balai Besar Konservasi Daya Alam Sulawesi Selatan
                 </div>
               </div>
             </div>
@@ -67,17 +67,17 @@ export default function Navbar() {
               <div className="col-md-6 text-center mt-3">
                 <a href="#">
                   <img
-                    src="/images/logo-jbg.png"
+                    src="/images/logo-sfm.png"
                     width="110"
                     className="img-responsive"
                   />
                 </a>
               </div>
               <div className="col-md-12 text-center text-white mb-3">
-                <h2 className="header-school">DESA SANTRI</h2>
+                <h2 className="header-school">SFM-FC</h2>
                 <hr />
                 <div className="header-address">
-                  Jln. Diponegoro No. 58, Wonosalam, Jombang, Jawa Timur, 61473
+                Sahabat Football Makassar - Football Club
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function Navbar() {
                   }
                   to="/"
                 >
-                  <i className="fa fa-home"></i> BERANDA
+                  <i className="fa fa-home"></i> HOME
                 </Link>
               </li>
 
@@ -144,7 +144,7 @@ export default function Navbar() {
                   }
                   to="/pages"
                 >
-                  <i className="fa fa-info-circle"></i> TENTANG DESA
+                  <i className="fa fa-info-circle"></i> ABOUT SFM
                 </Link>
               </li>
 
@@ -157,7 +157,7 @@ export default function Navbar() {
                   }
                   to="/aparaturs"
                 >
-                  <i className="fa fa-user-circle"></i> APARATURS
+                  <i className="fa fa-user-circle"></i> TIM
                 </Link>
               </li>
 
@@ -170,7 +170,7 @@ export default function Navbar() {
                   }
                   to="/posts"
                 >
-                  <i className="fa fa-book"></i> BERITA
+                  <i className="fa fa-book"></i> NEWS
                 </Link>
               </li>
 
@@ -183,7 +183,7 @@ export default function Navbar() {
                   }
                   to="/products"
                 >
-                  <i className="fa fa-shopping-bag"></i> PRODUK DESA
+                  <i className="fa fa-shopping-bag"></i> STORE
                 </Link>
               </li>
 

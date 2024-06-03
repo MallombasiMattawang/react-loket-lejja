@@ -39,7 +39,35 @@ export default function sidebar() {
             Dashboard
           </Link>
 
-          {(hasAnyPermission(["categories.index"]) ||
+          <Link
+            className={
+              activeRoute[2] === "tiket"
+                ? "nav-link active-sidebar"
+                : "nav-link"
+            }
+            to="/admin/tiket"
+          >
+            <div className="sb-nav-link-icon">
+              <i className="fas fa-ticket"></i>
+            </div>
+            Loket Tiket
+          </Link>
+
+          <Link
+            className={
+              activeRoute[2] === "tiket-keluar"
+                ? "nav-link active-sidebar"
+                : "nav-link"
+            }
+            to="/admin/tiket-keluar"
+          >
+            <div className="sb-nav-link-icon">
+              <i className="fas fa-ticket"></i>
+            </div>
+            Tiket Keluar
+          </Link>
+
+          {/* {(hasAnyPermission(["categories.index"]) ||
             hasAnyPermission(["posts.index"]) ||
             hasAnyPermission(["pages.index"]) ||
             hasAnyPermission(["products.index"])) && (
@@ -148,97 +176,36 @@ export default function sidebar() {
                 </Link>
               )}
             </nav>
-          </div>
+          </div> */}
 
-          {(hasAnyPermission(["photos.index"]) ||
-            hasAnyPermission(["sliders.index"])) && (
+          {hasAnyPermission(["layanans.index"]) && (
             <>
-              <div className="sb-sidenav-menu-heading">MEDIA MANAGEMENT</div>
-              <a
-                className={
-                  "nav-link collapsed " +
-                  (activeRoute[2] === "photos"
-                    ? " active-sidebar"
-                    : activeRoute[2] === "sliders"
-                    ? " active-sidebar"
-                    : "")
-                }
-                href="#"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseMedias"
-                aria-expanded="false"
-                aria-controls="collapseMedias"
-              >
-                <div className="sb-nav-link-icon">
-                  <i className="fas fa-images"></i>
-                </div>
-                Media
-                <div className="sb-sidenav-collapse-arrow">
-                  <i
-                    className="fas fa-angle-down"
-                    style={{ color: "color: rgb(65 60 60)" }}
-                  ></i>
-                </div>
-              </a>
-            </>
-          )}
-          <div
-            className={
-              "collapse " +
-              (activeRoute[2] === "photos"
-                ? " show"
-                : activeRoute[2] === "sliders"
-                ? " show"
-                : "")
-            }
-            id="collapseMedias"
-            aria-labelledby="headingOne"
-            data-bs-parent="#sidenavAccordion"
-          >
-            <nav className="sb-sidenav-menu-nested nav">
-              {hasAnyPermission(["photos.index"]) && (
-                <Link
-                  className={
-                    activeRoute[2] === "photos"
-                      ? "nav-link active-sidebar"
-                      : "nav-link"
-                  }
-                  to="/admin/photos"
-                >
-                  Photos
-                </Link>
-              )}
-
-              {hasAnyPermission(["sliders.index"]) && (
-                <Link
-                  className={
-                    activeRoute[2] === "sliders"
-                      ? "nav-link active-sidebar"
-                      : "nav-link"
-                  }
-                  to="/admin/sliders"
-                >
-                  Sliders
-                </Link>
-              )}
-            </nav>
-          </div>
-
-          {hasAnyPermission(["aparaturs.index"]) && (
-            <>
-              <div className="sb-sidenav-menu-heading">OTHERS</div>
+              <div className="sb-sidenav-menu-heading">KONFIGURASI</div>
               <Link
                 className={
-                  activeRoute[2] === "aparaturs"
+                  activeRoute[2] === "layanans"
                     ? "nav-link active-sidebar"
                     : "nav-link"
                 }
-                to="/admin/aparaturs"
+                to="/admin/layanans"
               >
                 <div className="sb-nav-link-icon">
-                  <i className="fas fa-user"></i>
+                  <i className="fas fa-cogs"></i>
                 </div>
-                Aparaturs
+                Set Layanan
+              </Link>
+              <Link
+                className={
+                  activeRoute[2] === "day"
+                    ? "nav-link active-sidebar"
+                    : "nav-link"
+                }
+                to="/admin/day/edit/1"
+              >
+                <div className="sb-nav-link-icon">
+                  <i className="fas fa-cogs"></i>
+                </div>
+                Set Status Hari
               </Link>
             </>
           )}

@@ -13,6 +13,9 @@ import Cookies from "js-cookie";
 //import toast
 import toast from "react-hot-toast";
 
+//import digitalclock
+import DigitalClock from "../../utils/DigitalClock";
+
 export default function navbar() {
     //state toggle
     const [sidebarToggle, setSidebarToggle] = useState(false);
@@ -67,8 +70,8 @@ export default function navbar() {
 
     return (
         <nav className="sb-topnav navbar navbar-expand navbar-dark bg-green border-top-yellow shadow-sm fixed-top" style={{ paddingLeft: 0, height: '56px', zIndex: '1039' }}>
-            <a className="navbar-brand ps-3 fw-bold" href="index.html">
-                DESA DIGITAL
+            <a className="navbar-brand ps-3 fw-bold" href="#">
+                E-TIKETING
             </a>
             <button
                 className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
@@ -78,7 +81,7 @@ export default function navbar() {
             >
                 <i className="fas fa-bars"></i>
             </button>
-
+            <DigitalClock />
             <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"></form>
             <ul className="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li className="nav-item dropdown">

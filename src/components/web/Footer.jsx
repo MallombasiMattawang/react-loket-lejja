@@ -12,7 +12,7 @@ export default function footer() {
             </h5>
             <hr />
             <div className="text-center">
-              <img src="/images/logo-jbg.png" width="70" />
+              <img src="/images/logo-sfm.png" width="100" />
             </div>
             <p className="text-justify mt-3">
               Desa Santri merupakan desa yang berletak di kabupaten Jombang dan

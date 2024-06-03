@@ -79,6 +79,15 @@ import WebPostsShow from "../views/Web/Posts/Show";
 import WebProductsIndex from "../views/Web/Products/Index";
 //import view products show
 import WebProductsShow from "../views/Web/Products/Show";
+import LayanansIndex from "../views/Admin/Layanans/Index";
+import LayanansCreate from "../views/Admin/Layanans/Create";
+import LayanansEdit from "../views/Admin/Layanans/Edit";
+
+import TiketIndex from "../views/Admin/Tikets/Index";
+import TiketCreate from "../views/Admin/Tikets/Create";
+import ConfigDayEdit from "../views/Admin/ConfigDays/Edit";
+import TiketAll from "../views/Admin/Tikets/All";
+import Cetak from "../views/Admin/Tikets/Cetak";
 
 
 
@@ -97,6 +106,56 @@ export default function RoutesIndex() {
                 element={
                     <PrivateRoutes>
                         <Dashboard />
+                    </PrivateRoutes>
+                }
+            />
+
+            {/* private route "/admin/tiket" */}
+            <Route
+                path="/admin/tiket"
+                element={
+                    <PrivateRoutes>
+                        <TiketIndex />
+                    </PrivateRoutes>
+                }
+            />
+
+            {/* private route "/admin/tiket-cetak" */}
+            <Route
+                path="/admin/tiket-cetak/:id"
+                element={
+                    <PrivateRoutes>
+                        <Cetak />
+                    </PrivateRoutes>
+                }
+            />
+
+            {/* private route "/admin/tiket/all" */}
+            <Route
+                path="/admin/tiket-keluar"
+                element={
+                    <PrivateRoutes>
+                        <TiketAll />
+                    </PrivateRoutes>
+                }
+            />
+
+            {/* private route "/admin/tiket/create" */}
+            <Route
+                path="/admin/tiket/create/:id"
+                element={
+                    <PrivateRoutes>
+                        <TiketCreate />
+                    </PrivateRoutes>
+                }
+            />
+
+             {/* private route "/admin/day/edit" */}
+             <Route
+                path="/admin/day/edit/:id"
+                element={
+                    <PrivateRoutes>
+                        <ConfigDayEdit />
                     </PrivateRoutes>
                 }
             />
@@ -338,8 +397,39 @@ export default function RoutesIndex() {
                 }
             />
 
+             {/* private route "/admin/layanans/" */}
+             <Route
+                path="/admin/layanans"
+                element={
+                    <PrivateRoutes>
+                        <LayanansIndex />
+                    </PrivateRoutes>
+                }
+            />
+
+             {/* private route "/admin/layanans/create" */}
+             <Route
+                path="/admin/layanans/create"
+                element={
+                    <PrivateRoutes>
+                        <LayanansCreate />
+                    </PrivateRoutes>
+                }
+            />
+
+             {/* private route "/admin/aparaturs/edit/:id" */}
+             <Route
+                path="/admin/layanans/edit/:id"
+                element={
+                    <PrivateRoutes>
+                        <LayanansEdit />
+                    </PrivateRoutes>
+                }
+            />
+
             {/* route "/" */}
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Login />} />
             {/* route "/aparaturs" */}
             <Route path="/aparaturs" element={<WebAparatursIndex />} />
             {/* route "/pages" */}

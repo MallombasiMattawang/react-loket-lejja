@@ -20,6 +20,7 @@ import CardProduct from "../../../components/general/CardProduct";
 
 //import card post home
 import CardPostHome from "../../../components/general/CardPostHome";
+import TableStanding from "../../../components/general/TableStanding";
 
 export default function Home() {
   //title page
@@ -74,46 +75,15 @@ export default function Home() {
 
   return (
     <LayoutWeb>
-      <Slider />
-
-      <div className="container mt-5 mb-3">
-        <div className="row">
-          <div className="col-md-12 mb-3">
-            <div className="section-title">
-              <h4>
-                <i className="fa fa-shopping-bag"></i>
-                <strong style={{ color: "rgb(209 104 0)" }}> PRODUK </strong>
-                DESA
-              </h4>
-            </div>
-          </div>
-          {loadingProducts ? (
-            <Loading />
-          ) : products.length > 0 ? (
-            products.map((product) => (
-              <CardProduct
-                key={product.id}
-                image={product.image}
-                title={product.title}
-                slug={product.slug}
-                price={product.price}
-                phone={product.phone}
-              />
-            ))
-          ) : (
-            <AlertDataEmpty />
-          )}
-        </div>
-      </div>
-
-      <div className="container mt-2 mb-4">
+      <Slider />   
+      <div className="container mt-4 mb-4">
         <div className="row">
           <div className="col-md-12 mb-3">
             <div className="section-title">
               <h4>
                 <i className="fa fa-book"></i>
-                <strong style={{ color: "rgb(209 104 0)" }}> BERITA </strong>
-                TERBARU
+                <strong style={{ color: "rgb(209 104 0)" }}> Featured </strong>
+                News
               </h4>
             </div>
           </div>
@@ -136,6 +106,7 @@ export default function Home() {
           )}
         </div>
       </div>
+      {/* <TableStanding /> */}
     </LayoutWeb>
   );
 }
