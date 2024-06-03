@@ -1,1 +1,1 @@
-Aplikasi react terpisah
+Aplikasi Loket Untuk Operator Karcis
